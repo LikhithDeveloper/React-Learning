@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(54, 54, 232);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div:nth-child(1){
+  /* background-color: red; */
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font: 1em sans-serif;
+  align-items: center;
+}
+nav > div:nth-child(2){
+  /* background-color: gray; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > div:nth-child(2) a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 900;
+  font: 1em sans-serif;
+  /* padding: 10px; */
+}
+
+.options{
+  width: 50%;
+  /* background-color: red; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+nav > div:nth-child(2) a:hover{
+  color: white;
+  transition: 0.5s ease;
+}
+
+.input-div{
+  width: 100%;
+  height: 93vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-div form{
+  width: 480px;
+  height: 300px;
+  /* background-color: yellow; */
+  border: 3px dashed blue; /* Set a transparent dashed border */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font: 1em sans-serif;
+}
+
+.inp{
+  display: none;
+}
+
+.custom-file-upload {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(54, 54, 232);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid blue;
+  transition: background-color 0.3s;
+  width: 200px;
+  height: 50px;
+  backdrop-filter: blur(10px); /* Blur the background behind the div */
+}
+
+.custom-file-upload:hover {
+  background-color: rgb(40, 40, 200);
+}
+
+.upload{
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  margin: 20px;
+  color: white;
+  font: 1em sans-serif;
+  font-size: 14px;
+}

@@ -1,0 +1,19 @@
+
+.outer{
+  width: 260px;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 38%;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+
+.inner-div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

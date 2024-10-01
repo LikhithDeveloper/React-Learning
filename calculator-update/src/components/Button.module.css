@@ -1,0 +1,14 @@
+.button{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  /* .inner-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  } */

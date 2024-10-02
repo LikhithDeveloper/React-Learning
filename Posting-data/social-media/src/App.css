@@ -1,0 +1,67 @@
+
+.container1{
+  display: flex;
+}
+.inner-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar{
+  min-height: 729px;
+}
+
+.form-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  height: 100%;
+}
+
+.form-div form{
+  width: 60%;
+}
+
+.card-box{
+  width: 100%;
+  /* background-color: red; */
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+  /* margin-bottom: 10px; */
+  overflow-y: scroll;
+  gap: 10px;
+}
+
+.card-box div{
+  height: 5px;
+  /* gap: 20px; */
+}
+
+.tags{
+  margin: 0px 6px;
+}
+
+.addtag button{
+  background-color: rgb(48, 198, 48);
+  border: none;
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+}
+
+.addtag .tags-list{
+  background-color: red;
+  margin: 5px;
+}
+
+.welcome{
+  margin-top: 80px;
+}

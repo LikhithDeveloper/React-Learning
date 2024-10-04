@@ -11,10 +11,10 @@
 .top-div{
     background-color: #191A1C;
     height: 70px;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 1;
 }
 .navbar{
     display: flex;
@@ -111,6 +111,7 @@
 }
 
 @media screen and (max-width:1030px) {
+    
    .div2{
     display: none;
    }

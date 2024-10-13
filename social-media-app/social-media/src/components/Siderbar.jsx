@@ -1,10 +1,12 @@
+import {Link} from "react-router-dom";
+
 const SideBar = ({makeActive,sidebar}) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
       style={{ width: "280px" }}
     >
-      <a
+      <Link
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
@@ -12,12 +14,12 @@ const SideBar = ({makeActive,sidebar}) => {
           <use xlinkHref="#bootstrap"></use>
         </svg>
         <span className="fs-4">Sidebar</span>
-      </a>
+      </Link>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a
-            href="#"
+          <Link
+            to="/"
             className={`nav-link text-white ${sidebar === "Home"?'active': ''}`}
             aria-current="page"
             onClick={() => makeActive("Home")}
@@ -26,15 +28,15 @@ const SideBar = ({makeActive,sidebar}) => {
               <use xlinkHref="#home"></use>
             </svg>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className={`nav-link text-white ${sidebar === "Post"?'active': ''}`} onClick={() => makeActive("Post")}>
+          <Link to="/create-post" className={`nav-link text-white ${sidebar === "Post"?'active': ''}`} onClick={() => makeActive("Post")}>
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#speedometer2"></use>
             </svg>
             Create Post
-          </a>
+          </Link>
         </li>
       </ul>
       <hr />

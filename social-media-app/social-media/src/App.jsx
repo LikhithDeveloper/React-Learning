@@ -7,6 +7,7 @@ import Form from "./components/Forms";
 import Post from "./components/Post";
 import { useState, useSyncExternalStore } from "react";
 import PostListProvider from "./store/Post-list";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [sidebar ,SetSidebar] = useState("Home");
@@ -20,6 +21,7 @@ function App() {
   // };
 
   const makeActive = (barname) => {
+    console.log(barname);
     SetSidebar(barname);
   }
   return (
@@ -28,7 +30,8 @@ function App() {
       <SideBar makeActive = {makeActive} sidebar = {sidebar}></SideBar>
       <div className="inner-container">
         <Header></Header>
-        {sidebar === 'Home'?<Post></Post>:<Form></Form>}
+        <Outlet/>
+        {/* {sidebar === 'Home'?<Post></Post>:<Form></Form>} */}
         <Footer></Footer>
       </div>
       </PostListProvider>

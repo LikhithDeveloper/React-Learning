@@ -1,4 +1,5 @@
 import "./Hero.css";
+import hero from "./images/hero.mp4"
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
         </p>
         <button className="hero-2-btn">Contact Us<span className="hero-2-btn-span"></span></button>
       </div>
-      <div className="hero-3">z</div>
+      <div className="hero-3"><video src={hero} style={{"width":"80%"}} autoPlay loop muted></video></div>
     </section>
   );
 };

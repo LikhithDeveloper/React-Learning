@@ -10,7 +10,8 @@ const Post = () => {
   // console.log(PostListItems);
   return (
     <>
-    {/* {PostListItems.length === 0 && <Welcome></Welcome>} */}
+    {/* <Welcome></Welcome> */}
+    {PostListItems.length === 0 && <Welcome></Welcome>}
     <div className="card-box">
       {PostListItems.map((item) => (
         <div

@@ -44,7 +44,7 @@ const PostListProvider = ({ children }) => {
     fetch("https://dummyjson.com/posts")
     .then((res) => res.json())
     .then((data) => {
-      let posts = data.posts;
+      let {posts} = data;
       dispatch({ type: "addnew", paylod: {posts} })
     });
     setdata(true);

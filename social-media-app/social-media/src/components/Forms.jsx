@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { PostList } from "../store/Post-list";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -8,6 +9,7 @@ const Form = () => {
   const [tags, setTags] = useState([]);
   const [tag, setTag] = useState("");
   const {addList,setTitle,setDec } = useContext(PostList);
+  const navigation = useNavigate();
   const AddTag = (event) => {
     setTag(event.target.value);
   };
@@ -16,9 +18,7 @@ const Form = () => {
     event.preventDefault();
     if (tag.trim()) {
       setTags((prevTags) => {
-        const updatedTags = [...prevTags, tag.trim()];
-        // console.log(updatedTags); // This will log the updated tags array
-        return updatedTags;
+        return [...prevTags, tag.trim()];
       });
       setTag(""); // Clear the input field after adding the tag
     }
@@ -26,11 +26,9 @@ const Form = () => {
 
   const deleteTag = (tagToDelete) => {
     setTags((prevTags) => {
-      const filteredTags = prevTags.filter(
-        (currentTag) => currentTag !== tagToDelete
-      );
-      // console.log(filteredTags); // This will log the updated tags array after deletion
-      return filteredTags;
+      return prevTags.filter(
+              (currentTag) => currentTag !== tagToDelete
+            );
     });
   };
 
@@ -48,6 +46,7 @@ const Form = () => {
     addList(new_post);
     setTags([]);
     e.target.reset();
+    navigation("/");
   }
 
   return (

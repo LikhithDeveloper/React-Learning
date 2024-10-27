@@ -21,6 +21,7 @@ function App() {
 
   const onClickDelete = (taskname) => {
     // console.log(taskname);
+    // sourcery skip: avoid-using-var
     var newnewdata = TextInput.filter((item) => item.name != taskname);
     SetInput(newnewdata);
   };

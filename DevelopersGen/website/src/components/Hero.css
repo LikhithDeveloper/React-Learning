@@ -1,162 +1,174 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-.hero{
-    background-color: #17191B;
-    width: 100%;
-    height: 91vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 70px;
+.hero {
+  background-color: #17191b;
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 70px;
 }
 
-.hero-1{
-    width: 15%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.hero-1 {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.hero-1 a{
-    rotate: 270deg;
-    text-decoration: none;
-    color: white;
-    margin: 40px 30px;
-    margin-right: -60px;
-    margin-top: 50px;
-    font-family: 'Jost', sans-serif;
-    position: relative;
+.hero-1 a {
+  rotate: 270deg;
+  text-decoration: none;
+  color: white;
+  margin: 40px 30px;
+  margin-right: -60px;
+  margin-top: 50px;
+  font-family: "Jost", sans-serif;
+  position: relative;
 }
-.hero-1 a::after{
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #191A1c;
-    position: absolute;
-    left:-20px;
-    top: 5px;
-    border: 1px dashed white;
-    border-radius: 50%;
-    animation-name: socialmediaanimation;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-timing-function: linear;
+.hero-1 a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #191a1c;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  border: 1px dashed white;
+  border-radius: 50%;
+  animation-name: socialmediaanimation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 @keyframes socialmediaanimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-.hero-2{
-    /* background-color: rgb(132, 35, 35); */
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    color: white;
-    flex-direction: column;
-    /* float: left; */
+.hero-2 {
+  /* background-color: rgb(132, 35, 35); */
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+  flex-direction: column;
+  /* float: left; */
 }
-.hero-2 h1{
-    font-size: 50px;
-    color: white;
-    font-family: "Saira", sans-serif;
-    font-weight: 700;
+.hero-2 h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
 }
-.hero-2 h2{
-    font-family: "Saira", sans-serif;
-    font-size: 48px;
-    color: rgb(25, 26, 28);
-    -webkit-text-stroke: 1.5px #426a68;
-    letter-spacing: 0.1em;
-    display: flex;
-    position: relative;
-    overflow: hidden;
+.hero-2 h2 {
+  font-family: "Saira", sans-serif;
+  font-size: 48px;
+  color: rgb(25, 26, 28);
+  -webkit-text-stroke: 1.5px #426a68;
+  letter-spacing: 0.1em;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 .it {
-    background-color: rgb(25, 26, 28);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0%;
-    animation-name: slide;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
+  background-color: rgb(25, 26, 28);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 
 @keyframes slide {
-    0%{
-        left: 0;
-    }
-    100%{
-        left: 100%;
-    }
-}
-.hero-2 p{
-    font-family: "Saira", sans-serif;
-}
-
-.hero-2-btn{
-    border: 2px solid #5B847B;
-    border-radius: 3px;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    width: 150px;
-    height: 40px;
-    margin-top: 30px;
-    font-family: "Saira", sans-serif;
-    position: relative;
-    display: flex;
-    padding: 6px 40px;
-    z-index: 0;
-    /* font-size: 14px; */
-    font-weight: 600;
-}
-
-.hero-2-btn-span{
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    background-color: #5B847B;
-    z-index: -1;
+  0% {
     left: 0;
-    top: 0;
-    transition: 0.2s ease;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.hero-2 p {
+  font-family: "Saira", sans-serif;
 }
 
-.hero-2-btn:hover{
-    .hero-2-btn-span{
-        width: 100%;
-    }
+.hero-2-btn {
+  border: 2px solid #5b847b;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  width: 155px;
+  height: 40px;
+  margin-top: 30px;
+  font-family: "Saira", sans-serif;
+  position: relative;
+  display: flex;
+  padding: 10px 40px;
+  z-index: 0;
+  /* font-size: 14px; */
+  font-weight: 600;
 }
 
+.hero-2-btn-span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #5b847b;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transition: 0.2s ease;
+}
 
+.hero-2-btn:hover {
+  .hero-2-btn-span {
+    width: 100%;
+  }
+}
 
-.hero-3{
-    /* background-color: rgb(61, 52, 138); */
-    width: 50%;
-    height: 100%;
-    display: flex;
+.hero-3 {
+  /* background-color: rgb(61, 52, 138); */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1030px) {
+  .hero {
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
-}
+  }
+  .hero-1 {
+    rotate: 90deg;
+    width: 80%;
+    height: 10%;
+    margin-top: -100px;
+  }
+  .hero-3 {
+    display: none;
+  }
 
-/* 
-@media screen and (max-width:1030px) {
-    .hero{
-        margin-top: 0px;
-    }
-} */
+  .hero-2 {
+    width: 80%;
+    align-items: center;
+    height: 50%;
+    margin-top: -100px;
+  }
+}

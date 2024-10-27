@@ -4,7 +4,6 @@ import { MdAddBox } from "react-icons/md";
 import { IoIosAddCircle } from "react-icons/io";
 
 function AddTodo({ handelInput }) {
-
   // The commented once are useState;
 
   // const [task1, date1] = useState("");
@@ -24,12 +23,12 @@ function AddTodo({ handelInput }) {
 
   const submit = (event) => {
     event.preventDefault();
-    // console.log(todonameele.current);
+    // todonameele.current.style.backgroundColor = "blue";
     const task1 = todonameele.current.value;
-    const  task2 = tododateele.current.value;
+    const task2 = tododateele.current.value;
     todonameele.current.value = "";
     tododateele.current.value = "";
-    handelInput(task1,task2);
+    handelInput(task1, task2);
     // clear();
   };
 

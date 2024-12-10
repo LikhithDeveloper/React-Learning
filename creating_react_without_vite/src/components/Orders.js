@@ -8,6 +8,7 @@ export const Orders = () => {
       <Link to={"/order/cancel"}>Cancel Product</Link>
       <Link to={"/order/buylater"}>Buy it later</Link>
       <br></br>
+      <br></br>
       <Outlet></Outlet>
       <button onClick={() => navigate("/confirm")}>Place Order</button>
     </>

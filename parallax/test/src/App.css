@@ -1,0 +1,9 @@
+.rotating-div {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 10%;
+  margin-top: 50px;
+  transition: transform 1s ease-in-out; /* Smooth transformation */
+}

@@ -1,6 +1,6 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const SideBar = ({makeActive,sidebar}) => {
+const SideBar = ({ makeActive, sidebar }) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
@@ -20,7 +20,9 @@ const SideBar = ({makeActive,sidebar}) => {
         <li className="nav-item">
           <Link
             to="/"
-            className={`nav-link text-white ${sidebar === "Home"?'active': ''}`}
+            className={`nav-link text-white ${
+              sidebar === "Home" ? "active" : ""
+            }`}
             aria-current="page"
             onClick={() => makeActive("Home")}
           >
@@ -31,7 +33,13 @@ const SideBar = ({makeActive,sidebar}) => {
           </Link>
         </li>
         <li>
-          <Link to="/create-post" className={`nav-link text-white ${sidebar === "Post"?'active': ''}`} onClick={() => makeActive("Post")}>
+          <Link
+            to="/create-post"
+            className={`nav-link text-white ${
+              sidebar === "Post" ? "active" : ""
+            }`}
+            onClick={() => makeActive("Post")}
+          >
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#speedometer2"></use>
             </svg>

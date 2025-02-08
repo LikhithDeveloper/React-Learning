@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -12,7 +12,7 @@ nav {
   align-items: center;
 }
 
-nav > div:nth-child(1){
+nav > div:nth-child(1) {
   /* background-color: red; */
   width: 25%;
   height: 100%;
@@ -21,7 +21,7 @@ nav > div:nth-child(1){
   font: 1em sans-serif;
   align-items: center;
 }
-nav > div:nth-child(2){
+nav > div:nth-child(2) {
   /* background-color: gray; */
   width: 50%;
   height: 100%;
@@ -29,7 +29,7 @@ nav > div:nth-child(2){
   justify-content: center;
   align-items: center;
 }
-nav > div:nth-child(2) a{
+nav > div:nth-child(2) a {
   text-decoration: none;
   color: black;
   font-size: 17px;
@@ -38,7 +38,7 @@ nav > div:nth-child(2) a{
   /* padding: 10px; */
 }
 
-.options{
+.options {
   width: 50%;
   /* background-color: red; */
   height: 100%;
@@ -48,12 +48,12 @@ nav > div:nth-child(2) a{
   float: left;
 }
 
-nav > div:nth-child(2) a:hover{
+nav > div:nth-child(2) a:hover {
   color: white;
   transition: 0.5s ease;
 }
 
-.input-div{
+.input-div {
   width: 100%;
   height: 93vh;
   /* background-color: red; */
@@ -62,7 +62,7 @@ nav > div:nth-child(2) a:hover{
   align-items: center;
 }
 
-.input-div form{
+.input-div form {
   width: 480px;
   height: 300px;
   /* background-color: yellow; */
@@ -75,7 +75,7 @@ nav > div:nth-child(2) a:hover{
   font: 1em sans-serif;
 }
 
-.inp{
+.inp {
   display: none;
 }
 
@@ -100,7 +100,7 @@ nav > div:nth-child(2) a:hover{
   background-color: rgb(40, 40, 200);
 }
 
-.upload{
+.upload {
   width: 150px;
   height: 30px;
   background-color: red;
@@ -110,4 +110,29 @@ nav > div:nth-child(2) a:hover{
   color: white;
   font: 1em sans-serif;
   font-size: 14px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.post h2 {
+  margin: 0;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
 }
